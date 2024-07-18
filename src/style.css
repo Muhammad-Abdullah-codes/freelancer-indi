@@ -32,10 +32,12 @@
 
 .but3 {
  color: #AE00FF;
+ border-radius: 5px;
 }
 
 .but4 {
  color: #DA954B;
+ border-radius: 5px;
 }
 
 .but-bot {
@@ -52,7 +54,8 @@
 }
 
 .login {
- border: solid #D9D9D9 1px;
+ border: solid #D9D9D9 2px;
+ border-radius: 5px;
 }
 
 .side {
