@@ -6,83 +6,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Freelancer-indi</title>
   <link rel="stylesheet" href="src/output.css">
-  <style>
-    .button {
-      font-size: x-small;
-      border-radius: 27px;
-      padding: 0px 20px 0px 20px;
-    }
-
-    .heading {
-      font-weight: 600;
-      font-size: 18px;
-    }
-
-    .filter:hover {
-      background-color: #EAF2FE;
-      border-radius: 6px;
-      color: blue;
-    }
-
-    .button2 {
-      width: 162px;
-      height: 40px;
-      border-radius: 19px;
-    }
-
-    .bor {
-      border: solid 1px #EFF0F4;
-      border-radius: 15px;
-    }
-
-    .but3{
-      color: #AE00FF;
-    }
-    .but4{
-      color: #DA954B;
-    }
-    .but-bot{
-      padding: 10px 30px;
-      border-radius: 15px;
-      margin-bottom: 20px;
-    }
-    .bord{
-      border: solid black 1px;
-      padding: 7px 20px;
-      border-radius: 15px;
-      margin: 0px 15px 20px 15px;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
 </head>
 
-<body>
-  <section class="m-10">
-    <div class="flex justify-between">
-      <img width="96" height="41" src="img/logo.png" alt="">
-      <button class="bg-blue-500 text-white w-20 h-12 button cursor-pointer">POST AD FREE</button>
-    </div>
-    <div class="m-5">
-      <h1 class="text-gray-300 heading">Filters</h1>
-      <button class="flex mt-5 text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 1.png"
-          alt="">Class Scale</button>
-      <button class="flex text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 5.png"
-          alt="">District</button>
-      <button class="flex text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 6.png"
-          alt="">Category</button>
-      <button class="flex text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 7.png"
-          alt="">Subject</button>
-    </div>
-    <div class="flex justify-center">
-      <button class="bg-blue-500 text-white button2 cursor-pointer">Filter</button>
+<body class="lg:bg-gray-100 font-hind">
+  <section class="hidden lg:block bg-white">
+    <div class="flex ml-80 mr-10 items-center justify-between h-16">
+      <p class="font-bold text-xl">Best Place find Quality Teachers</p>
+      <div class="flex items-center gap-5">
+        <button class="login text-xs h-8 px-5">
+          Login
+        </button>
+        <button class="bg-blue-500 text-white w-20 h-9 button cursor-pointer">POST AD FREE</button>
+      </div>
     </div>
   </section>
-  <div id="container1" class=""></div>
-  <div id="container2" class=""></div>
-  <div class="flex justify-center">
-    <button id="prev" class="bg-blue-500 but-bot text-xl font-bold text-white cursor-pointer">Prev</button>
-    <button id="page-number" class="bg-white text-xl font-bold bord cursor-pointer">1</button>
-    <button id="next" class="bg-blue-500 but-bot text-xl font-bold text-white cursor-pointer">Next</button>
+  <div class="lg:flex">
+    <section
+      class="m-10 bg-white lg:m-0 lg:absolute lg:top-0 lg:w-64 lg:h-full lg:border-2 lg:border-gray-100 lg:rounded-br-3xl">
+      <div class="flex justify-between lg:justify-center lg:mt-5">
+        <img width="96" height="41" class="lg:w-32" src="img/logo.png" alt="">
+        <button class="lg:hidden bg-blue-500 text-white w-20 h-9 button cursor-pointer">POST AD FREE</button>
+      </div>
+      <div class="m-5">
+        <h1 class="text-gray-300 heading">Filters</h1>
+        <button class="flex mt-5 text-xl lg:text-sm items-center w-full filter py-3 px-5 cursor-pointer"><img
+            class="mr-5" src="img/scale 1.png" alt="">Class Scale</button>
+        <button class="flex text-xl lg:text-sm items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5"
+            src="img/scale 5.png" alt="">District</button>
+        <button class="flex text-xl lg:text-sm items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5"
+            src="img/scale 6.png" alt="">Category</button>
+        <button class="flex text-xl lg:text-sm items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5"
+            src="img/scale 7.png" alt="">Subject</button>
+      </div>
+      <div class="flex justify-center">
+        <button class="bg-blue-500 text-white button2 cursor-pointer">Filter</button>
+      </div>
+    </section>
+    <section>
+      <div class="lg:bg-white lg:ml-72 lg:mt-8 py-10 px-7 lg:rounded-xl">
+        <div id="container1" class=""></div>
+        <div id="container2" class=""></div>
+      </div>
+      <div class="flex justify-center lg:ml-72 lg:mt-10 lg:space-x-20">
+        <button id="prev" class="bg-blue-500 but-bot text-xl font-bold text-white cursor-pointer">Prev</button>
+        <button id="page-number" class="bg-white text-xl font-bold bord cursor-pointer">1</button>
+        <button id="next" class="bg-blue-500 but-bot text-xl font-bold text-white cursor-pointer">Next</button>
+      </div>
+    </section>
+    <section class="hidden lg:block w-96 bg-white mt-8 ml-7 mr-7 rounded-xl mb-24">
+      <div class="bg-gray-400 rounded-xl mx-4 my-5 w-52 h-52"></div>
+      <div class="bg-gray-400 rounded-xl mx-4 my-5 w-52 h-52"></div>
+      <div class="bg-gray-400 rounded-xl mx-4 my-5 w-52 h-52"></div>
+      <div class="bg-gray-400 rounded-xl mx-4 my-5 w-52 h-52"></div>
+    </section>
   </div>
 </body>
 <script src="script/script.js"></script>
+
 </html>
