@@ -1,0 +1,60 @@
+.button {
+ font-size: x-small;
+ border-radius: 27px;
+ padding: 0px 20px 0px 20px;
+}
+
+.heading {
+ font-weight: 600;
+ font-size: 18px;
+}
+
+.filter {
+ width: full;
+}
+
+.filter:hover {
+ background-color: #EAF2FE;
+ border-radius: 6px;
+ color: blue;
+}
+
+.button2 {
+ width: 162px;
+ height: 40px;
+ border-radius: 19px;
+}
+
+.bor {
+ border: solid 1px #EFF0F4;
+ border-radius: 15px;
+}
+
+.but3 {
+ color: #AE00FF;
+}
+
+.but4 {
+ color: #DA954B;
+}
+
+.but-bot {
+ padding: 10px 30px;
+ border-radius: 15px;
+ margin-bottom: 20px;
+}
+
+.bord {
+ border: solid black 1px;
+ padding: 7px 20px;
+ border-radius: 15px;
+ margin: 0px 15px 20px 15px;
+}
+
+.login {
+ border: solid #D9D9D9 1px;
+}
+
+.side {
+ border: solid 1px #EFF0F4;
+}
