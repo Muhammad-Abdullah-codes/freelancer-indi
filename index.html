@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer-indi</title>
+  <link rel="stylesheet" href="src/output.css">
+  <style>
+    .button {
+      font-size: x-small;
+      border-radius: 27px;
+      padding: 0px 20px 0px 20px;
+    }
+
+    .heading {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .filter:hover {
+      background-color: #EAF2FE;
+      border-radius: 6px;
+      color: blue;
+    }
+
+    .button2 {
+      width: 162px;
+      height: 40px;
+      border-radius: 19px;
+    }
+
+    .bor {
+      border: solid 1px #EFF0F4;
+      border-radius: 15px;
+    }
+
+    .but3{
+      color: #AE00FF;
+    }
+    .but4{
+      color: #DA954B;
+    }
+    .but-bot{
+      padding: 10px 30px;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .bord{
+      border: solid black 1px;
+      padding: 7px 20px;
+      border-radius: 15px;
+      margin: 0px 15px 20px 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="m-10">
+    <div class="flex justify-between">
+      <img width="96" height="41" src="img/logo.png" alt="">
+      <button class="bg-blue-500 text-white w-20 h-12 button cursor-pointer">POST AD FREE</button>
+    </div>
+    <div class="m-5">
+      <h1 class="text-gray-300 heading">Filters</h1>
+      <button class="flex mt-5 text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 1.png"
+          alt="">Class Scale</button>
+      <button class="flex text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 5.png"
+          alt="">District</button>
+      <button class="flex text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 6.png"
+          alt="">Category</button>
+      <button class="flex text-xl items-center w-full filter py-3 px-5 cursor-pointer"><img class="mr-5" src="img/scale 7.png"
+          alt="">Subject</button>
+    </div>
+    <div class="flex justify-center">
+      <button class="bg-blue-500 text-white button2 cursor-pointer">Filter</button>
+    </div>
+  </section>
+  <div id="container1" class=""></div>
+  <div id="container2" class=""></div>
+  <div class="flex justify-center">
+    <button id="prev" class="bg-blue-500 but-bot text-xl font-bold text-white cursor-pointer">Prev</button>
+    <button id="page-number" class="bg-white text-xl font-bold bord cursor-pointer">1</button>
+    <button id="next" class="bg-blue-500 but-bot text-xl font-bold text-white cursor-pointer">Next</button>
+  </div>
+</body>
+<script src="script/script.js"></script>
+</html>
